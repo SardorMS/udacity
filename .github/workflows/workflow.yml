@@ -12,13 +12,14 @@ jobs:
     name: Build
     runs-on: [ubuntu-latest, windows-latest]
     steps:
+
       - uses: actions/checkout@v2
       
 
       - name: Run with setup-python 3.8.6
         uses: ./
-         with:
-           python-version: 3.8.6
-           architecture: x64
+        with:
+          python-version: 3.8.6
+          architecture: x64
       - name: Verify 3.8.6
     
