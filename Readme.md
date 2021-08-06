@@ -2,4 +2,4 @@
 
 [Nanodegree Program](https://www.udacity.com/nanodegree)
 
-Udacity Full-Stack Development Track Course.
+Udacity - Full-Stack Development Track Course.
