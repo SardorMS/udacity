@@ -1,4 +1,5 @@
 # Udacity
+<img src="logo.png" alt="Idacity Logo" width=300>
 
 [Nanodegree Program](https://www.udacity.com/nanodegree)
 
