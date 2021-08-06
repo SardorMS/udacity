@@ -1,24 +1,19 @@
-name: Main workflow
-
 on:
   push:
-    branches: [ master, main, ]
+    branches: ["master"]
   pull_request:
-    branches: [ master, main, ]
+    branches: ["master"]
+  workflow_dispatch:
 
 jobs:
+  tests:
+    name: Python
+    runs-on: [ ubuntu-latest ]
+    env:
+      USING_COVERAGE: '3.6,3.8'
 
-  build:
-    name: Build
-    runs-on: [ubuntu-latest, windows-latest]
+
     steps:
-
-      - uses: actions/checkout@v2
-      
-      - name: Run with setup-python 3.8.6
-      - uses: ./
-        with:
-          python-version: 3.8.6
-          architecture: x64
-
-    
+      - uses: "actions/checkout@v2"
+      - uses: "actions/setup-python@v2"
+                
